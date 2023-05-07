@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="js/jquery-3.6.4.js"></script>
+  <script src="js/script.js"></script>
+  <link rel="icon" href="/img/car.jpg">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Kcars || get your quality cars here</title>
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <form id="formOne" class="purchase">
+        <div class="form-group">
+          <label for="fullname">Full Name:</label>
+          <input id="fullname" class="form-control" type="text" required>
+        </div>
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <input id="address" class="form-control" type="text" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email address:</label>
+          <input id="email" class="form-control" type="text" required>
+        </div>
+        <div class="form-group">
+          <label for="car">Car Type:</label>
+          <select id="car" name="car">
+            <option value="select">Select the car you want to purchase:</option>
+            <option value="Porsche 911 GT3">Porsche 911 GT3</option>
+            <option value="Lamborghini Huracan">Lamborghini Huracan</option>
+            <option value="BMW M8">BMW M8</option>
+            <option value="Audi R8">Audi R8</option>
+            <option value="Lamborghini Huracan STO">Lamborghini Huracan STO</option>
+            <option value="Chevrolet Corvette">Chevrolet Corvette</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="price">Price:</label>
+          <select id="price" name="price">
+            <option value="select">Select the car you want to purchase:</option>
+            <option value="$169,700">$169,700 (Porsche 911 GT3)</option>
+            <option value="$209,409">$209,409 (Lamborghini Huracan)</option>
+            <option value="$134,100">$134,100 (BMW M8)</option>
+            <option value="$158,600">$158,600 (Audi R8)</option>
+            <option value="$327,828">$327,828 (Lamborghini Huracan STO)</option>
+            <option value="$119,150">$119,150 (Chevrolet Corvette)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="payment">Payment Option:</label>
+          <select id="payment" name="payment">
+            <option value="select">Select payment option:</option>
+            <option value="Credit Card">Credit Card</option>
+            <option value="Debit Card">Debit Card</option>
+            <option value="Paypal">Paypal</option>
+            <option value="Crypto Wallet">Crypto Wallet</option>
+            <option value="Bank Transfer">Bank Transfer</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="date">Date:</label>
+          <input id="date" class="form-control" type="date" required>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+  </div>
+  
+  <div id="receipt">
+    <h2>Receipt</h2>
+    <p> This is to certify that MR(MRS) <span class="fullname"></span> purscharsed a <span class="car"></span> for the sum of <span class="price"></span> from KCARS Automobile using a <span class="payment"></span> on <span class="date"></span> . A confimation email will be sent to <span class="email"></span> and after confimation, your car will be safely transported to <span class="address"></span>. Any vehicle purchased from us has a minimum warranty of 6 months. Thank you for patronizing us here at KCARS Automobile, we look forward to seeing you again. Note: There is an extra fee of $10,000 for the delivery of any vehicle purchased to the specified address.
+    <ul>
+      <li>Name of buyer: <span class="fullname"></span></li>
+      <li>Car purchased: <span class="car"></span></li>
+      <li>Amount: <span class="price"></span></li>
+      <li>Payment Method: <span class="payment"></span></li>
+      <li>Email Address: <span class="email"></span></li>
+      <li>Address: <span class="address"></span></li>
+    </ul>
+    </p>
+  </div>
+</body>
+
+</html>
