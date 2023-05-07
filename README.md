@@ -1,5 +1,5 @@
 # _Online market place_
-### _Online market place is a webpage that handles form submission, retrieves values from form elements, determines a user’s political belief based on these values, and redirects them to a different page based on their political belief._
+### _Online market place is a webpage where you select the car you want to purchase, payment method e.t.c. and a receipt is automatically generated with all the info we have been provided with._
 
 ## Technology used
 * _GIT_
